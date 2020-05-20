@@ -11,7 +11,7 @@ class Triangle
 #scalene = no sides equal
 # (side1 + side2) > side3 and sides > 0
   def kind
-    if (@side1<=0 || @side2 <= 0) || @side3<=0
+    if @side1<=0 || @side2 <= 0 || @side3<=0
       return TriangleError
     end
     if (@side1 + @side2) <= @side3
